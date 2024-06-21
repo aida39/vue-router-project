@@ -2,7 +2,7 @@
   <div id="app">
     <button @click="topPage">トップページ</button>
     <button @click="subPage">サブページ</button>
-    <button @click="routerPractice">RouterPractice</button>
+    <button @click="routerPractice">RouterPracticeページへ</button>
     <button @click="userListPage">ユーザー一覧ページ</button>
     <router-view></router-view>
   </div>

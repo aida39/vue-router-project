@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import RouterPractice from '../views/RouterPractice.vue'
-import DynamicRouteMatching from '../views/DynamicRouteMatching.vue'
+import ItemDetail from '../views/ItemDetail.vue'
 
 Vue.use(VueRouter)
 
@@ -18,9 +18,10 @@ const routes = [
     component: RouterPractice
   },
   {
-    path: '/dynamic-route-matching',
-    name: 'DynamicRouteMatching',
-    component: DynamicRouteMatching
+    path: '/item-detail',
+    name: 'ItemDetail',
+    component: ItemDetail,
+    props: true
   }
 ]
 

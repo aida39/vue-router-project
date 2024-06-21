@@ -1,7 +1,6 @@
 <template>
   <div id="home">
-    <router-link
-      :to="{ path: '/dynamic-route-matching', query: { userId: userId } }">DynamicRouteMatching.vueへ</router-link>
+    <button @click="get">detailへ</button>
   </div>
 </template>
 
@@ -9,7 +8,12 @@
 export default {
   data () {
     return {
-      userId: '1c10db36-a600-ad36-dc46-da001fc3cc13'
+      id: 'a182da'
+    }
+  },
+  methods: {
+    get () {
+      this.$router.push({ name: 'ItemDetail', query: { status: false } })
     }
   }
 }
