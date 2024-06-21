@@ -1,18 +1,16 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="home">
+    <router-link
+      :to="{ path: '/dynamic-route-matching', query: { userId: userId } }">DynamicRouteMatching.vueへ</router-link>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
+  data () {
+    return {
+      userId: '1c10db36-a600-ad36-dc46-da001fc3cc13'
+    }
   }
 }
 </script>
